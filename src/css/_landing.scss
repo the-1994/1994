@@ -1,0 +1,73 @@
+.rotate-div-container {
+position: relative;
+
+}
+
+.shiv {
+	background-color: $secondary-accent;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.rotate-div {
+		transform: rotate(-07deg);
+	  width: 115%;
+	  background-color: black;
+	  height: 300px;
+	  margin-left: -25px;
+		overflow: hidden;
+	  position: relative;
+//	  margin-left: 100%;
+}
+
+.content {
+	p {
+		padding: 10% 0 7%;
+  	font-weight: 300;
+		margin: 0 auto;
+		max-width: 20em;
+		font-family: 'Roboto';
+		text-transform: uppercase;
+		letter-spacing: 1px;
+//		line-height: 1.4em;
+	}
+}
+
+.pic {
+	background: url('https://s3-us-west-2.amazonaws.com/1994/durham-sky-4.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 200%;
+	width: auto;
+	margin-top: -100px;
+	transform: rotate(07deg);
+	position: relative;
+	z-index: 21;
+}
+
+.hidden-content {
+	position: absolute;
+	font-size: 2em;
+	color: white;
+//	width: 100%;
+	z-index: 20;
+	left: 46%;
+	top: 37%;
+	transform: translate(-50%) rotate(07deg);
+	line-height: 1.2;
+}
+
+@media screen and (max-width: 772px) {
+	.hidden-content {
+		left: 50%;
+		top: 25%;
+	}
+	
+	.content {
+		p {
+			padding-top: 14%;
+		 }
+    }
+}

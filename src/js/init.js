@@ -1,1 +1,2 @@
-app.showInitialPage();
+app.divExpand();
+app.hamburger();
