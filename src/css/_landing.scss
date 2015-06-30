@@ -3,9 +3,13 @@ position: relative;
 
 }
 
+.container {
+	  
+}
+
 .shiv {
-	background-color: $secondary-accent;
-	height: 100px;
+	background-color: $main-nav-color;
+	height: 180px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -17,7 +21,7 @@ position: relative;
 	  width: 115%;
 	  background-color: black;
 	  height: 300px;
-	  margin-left: -25px;
+	  margin-left: -30px;
 		overflow: hidden;
 	  position: relative;
 //	  margin-left: 100%;
@@ -37,14 +41,29 @@ position: relative;
 }
 
 .pic {
-	background: url('https://s3-us-west-2.amazonaws.com/1994/durham-sky-4.jpg') no-repeat center center fixed;
+//	background: url('https://s3-us-west-2.amazonaws.com/1994/brim-collage.jpg') no-repeat center top fixed;
+	position: relative;
 	background-size: cover;
 	height: 200%;
-	width: auto;
-	margin-top: -100px;
+	width: 200%;
+	margin-top: -400px;
+	margin-left: 60px;
+//	margin-right: 200%;
 	transform: rotate(07deg);
 	position: relative;
 	z-index: 21;
+//	overflow-x: hidden;
+	img {
+//		height: 100%;
+	width: 1400px;
+	height: auto;
+	}
+}
+
+.mati-collage {
+	position: absolute;
+	right: -100%;
+	top: -100px;
 }
 
 .hidden-content {
@@ -53,7 +72,7 @@ position: relative;
 	color: white;
 //	width: 100%;
 	z-index: 20;
-	left: 46%;
+	left: 45%;
 	top: 37%;
 	transform: translate(-50%) rotate(07deg);
 	line-height: 1.2;

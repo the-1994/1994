@@ -1,27 +1,19 @@
 app.divExpand = function () {
 	
 //	$('.rotate-div').hide();
-	
-   
-//	setTimeout(function() {
-//        $('.rotate-div').animate({'marginLeft':'-25px'}, 2000);
-//
-//
-//
-//}, 1000);
-	$('.pic').animate({marginTop:'400px'}, 11000);
-	
+//	$('.mati-collage').hide();
 
-     
-//        $('.rotate-div').animate({height: "0px"}, 4000);
-////			  $('.remove-space').animate({marginTop:'-150px'}, 2000);
-//		}, 1000);
-//	
-//		setTimeout(function() {
-//     
-//			  $('.remove-space').animate({marginTop:'-150px'}, 4000);
-//		}, 4000);
+	$('.brim-collage').animate({marginTop:'1200px'}, 30000);
 	
+   $('.mati-collage').hide();
 	
+	setTimeout(function() { 
+		$('.mati-collage').show();
+		$('.mati-collage').animate({right:'200%'}, 120000);
 	
-}
+	}, 20000);
+
+//   $('.mati-collage').show();
+	
+		
+};
