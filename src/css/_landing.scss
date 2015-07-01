@@ -1,14 +1,45 @@
+
+.hero-section {
+ text-align: center;
+ height: 110vh;
+ background-color: #FFF9E3;
+ position: relative;
+
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1000px;
+}
+
+.hero-img {
+   width: 700px;
+
+}
+
+.down-arrow {
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
+	transform: translate(-50%);
+	font-family: hflr;
+	font-size: 3em;
+	cursor: pointer;
+
+}
+
 .rotate-div-container {
 position: relative;
 
 }
 
-.container {
-	  
-}
+
 
 .shiv {
-	background-color: $main-nav-color;
+	background-color: #FFF9E3;
 	height: 180px;
 	position: absolute;
 	top: 0;
@@ -27,7 +58,7 @@ position: relative;
 //	  margin-left: 100%;
 }
 
-.content {
+.hero-content {
 	p {
 		padding: 10% 0 7%;
   	font-weight: 300;

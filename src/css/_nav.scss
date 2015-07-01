@@ -22,19 +22,19 @@
 
 .footer-top, footer {
 	background-color: $main-accent;
+	
 }
 .footer-top {
-	  transform: rotate(-07deg);
-	  width: 120%;
-//	  margin-left: -25px;
-	  color: white;
-	  text-align: center;
-	  min-height: 4em;
-	  padding: 5em 0;
-	  margin-left: -15px;
-	  margin-bottom: -95px;
-	  position: relative;
-		z-index: 100;
+  transform: rotate(-7deg);
+  width: 115%;
+  color: white;
+  text-align: center;
+  min-height: 8em;
+  padding: 5em 0;
+  margin-left: -15px;
+  margin-bottom: -115px;
+  position: relative;
+  z-index: 100;
 	h2 {
 			  margin-right: 17%;
 		    transform: rotate(7deg);
@@ -43,12 +43,13 @@
 	}
 }
 
+
 footer {
 	position: relative;
 	color: white;
 	padding-top: 50px;
-	z-index: 100;
-	min-height: 200px;
+	z-index: 101;
+	min-height: 215px;
 //	margin-bottom: -65px;
 	a {
 	  color: white;
@@ -57,6 +58,16 @@ footer {
 		text-transform: uppercase;
 		font-size: .8em;
 	}
+}
+
+.shiv-right {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	width: 200px;
+	bottom: 40px;
+	background-color: $main-accent;
+	z-index: 60;
 }
 
 .footer-flex-container {
