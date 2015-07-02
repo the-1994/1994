@@ -1,9 +1,17 @@
+.mobile-nav {
+   background-color: #FFF9E3;
+  top: 0;
+  z-index: 100000;
+
+
+}
+
 .navbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	padding: 60px 90px 100px;
+	padding: 30px 90px 100px;
 	align-items: center;
 	background-color: $main-nav-color;
 
@@ -17,7 +25,19 @@
 	.nav-logo {
 		width: 250px;
 		margin-top: 20px;
+		text-align: center;
+		font-size: 6.4em;
 	}
+}
+
+.expand400 {
+	padding-top: 200px !important;
+
+}
+
+.logo-mobile {
+	font-size: 4em;
+	z-index: 1000000;
 }
 
 .footer-top, footer {
@@ -29,12 +49,13 @@
   width: 115%;
   color: white;
   text-align: center;
-  min-height: 8em;
+  min-height: 4em;
   padding: 5em 0;
   margin-left: -15px;
   margin-bottom: -115px;
   position: relative;
   z-index: 100;
+	
 	h2 {
 			  margin-right: 17%;
 		    transform: rotate(7deg);
@@ -49,8 +70,8 @@ footer {
 	color: white;
 	padding-top: 50px;
 	z-index: 101;
-	min-height: 215px;
-//	margin-bottom: -65px;
+	min-height: 185px;
+
 	a {
 	  color: white;
 		margin-top: 20px;
@@ -78,18 +99,19 @@ footer {
 	font-size: 1.4em;
 	flex-wrap: wrap;
 	color: #222222;
+	position: relative;
 }
 
 .follow-wrap {
 	text-align: center;
 	min-width: 200px;
 	max-width: 200px;
-//	margin: 0 auto;
+
 
 	
 	a {
 		text-transform: lowercase;
-//		padding-right: 1.3em;
+
 	}
 }
 
@@ -111,6 +133,11 @@ footer {
 
 .logo-mobile {
 	display: none;
+}
+
+.responsive-menu {
+	display:none;
+
 }
 
 /////////// 3d logo //////////
@@ -144,14 +171,53 @@ footer {
 
 
 @media screen and (max-width: 772px) {
+.menu-btn {
+	margin-top:-4px;
+	height: 40px;
+	padding: 20px 7px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index:200000000000;
+}
+.menu-btn div {
+	position: absolute;
+	left: 90%;
+	top: 10px;
+	padding-right: 8px;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+ 
+.menu-btn span {
+	display: block;
+	width: 26px;
+	height: 6px;
+	margin: 4px 4px;
+	background: $main-accent;
+	z-index: 99;
+
+}
+ 
+.responsive-menu{
+	background-color: $main-nav-color;
+	left: 50%;
+	/*transform: translate(-50%);*/
+}
+ 
+.expand {
+	display: block !important; 
+}
 
 	.logo-mobile {
-		display: block;
-		position: absolute;
-		left: 50%;
-		top: 40px;
+		/*position: relative;*/
+		top: 30px;
 		transform: translate(-50%);
 		height: 70px;
+		/*z-index: 10000;*/
 	}
 	
 	.nav-logo {
@@ -167,6 +233,10 @@ footer {
 		}
 	}
 	
+	.hero-94 {
+		display:none;
+
+	}
 
 	
 	
@@ -178,59 +248,19 @@ footer {
 		background-color: white;
 	}
 	
-	
-.menu-btn {
-	min-height: 90px;
-	padding: 2.3em 1em 1em;
-	background-color: white;
-	}
-.menu-btn div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
- 
-.menu-btn span {
-	display: block;
-	width: 28px;
-	height: 5px;
-	margin: 6px 0;
-	background: $main-accent;
-	z-index: 99;
-	
-}
- 
-.responsive-menu{
-	display: none;
-}
- 
-.expand {
-	display: block !important; 
-}
+
+
 	
 	.navbar {
 		flex-direction: column;
-//		padding-left: 1em;
-//		border: 5px $orange solid;
 		max-width: 100%;
 		border-left: none;
-		padding: 0 0 40px;;
-		background-color: white;
-//		border-bottom: none;
-	
+		padding: 20px 20px;
+
+
 	}
 	
 	.navbar li {
 		padding-top: .5em;
-	}
-	
-	
-	
+	}	
 }

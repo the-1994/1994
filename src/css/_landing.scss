@@ -1,10 +1,9 @@
 
 .hero-section {
  text-align: center;
- height: 110vh;
+ height: 100vh;
  background-color: #FFF9E3;
  position: relative;
-
 }
 
 .hero-content {
@@ -20,9 +19,17 @@
 
 }
 
+.logo {
+	font-family:'Lora', serif;
+}
+
+.hero-94 {
+	font-size:17em;
+}
+
 .down-arrow {
 	position: absolute;
-	bottom: 12%;
+	bottom: 10%;
 	left: 50%;
 	transform: translate(-50%);
 	font-family: hflr;
@@ -53,15 +60,17 @@ position: relative;
 	  background-color: black;
 	  height: 300px;
 	  margin-left: -30px;
-		overflow: hidden;
+	  overflow: hidden;
 	  position: relative;
 //	  margin-left: 100%;
 }
 
 .hero-content {
+
+
 	p {
-		padding: 10% 0 7%;
-  	font-weight: 300;
+		padding: 0% 0 7%;
+  	    font-weight: 300;
 		margin: 0 auto;
 		max-width: 20em;
 		font-family: 'Roboto';
@@ -120,4 +129,12 @@ position: relative;
 			padding-top: 14%;
 		 }
     }
+	.hero-94 {
+		font-size: 12em;
+
+	}
+}
+
+@media screen and (max-width: 500px) {
+
 }
