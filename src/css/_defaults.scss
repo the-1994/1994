@@ -9,7 +9,7 @@ $main-nav-color: #FFF9E3;
 body {
     font-family: $main-font;
     line-height: 1.4em;
-    background-color: white;
+    background-color: $main-nav-color;
     color: #444;
 	  -webkit-font-smoothing: antialiased;
 	 width: 100%;

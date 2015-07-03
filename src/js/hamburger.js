@@ -1,10 +1,9 @@
 app.hamburger = function(){
 	
 	$( '.menu-btn' ).click(function(){
-    	$('.responsive-menu').toggleClass('expand');
-    	$('.hero-section').toggleClass('expand400');
+    	// $('.responsive-menu').toggleClass('expand');
+    	$('.responsive-menu').toggle("slide", { direction: "down" }, 300);
+    	 // $('.flags').toggle("slide", { direction: "left" }, 300);
+    	// $('.hero-section').toggleClass('expand400');
     	     });
-
-
-
 };
