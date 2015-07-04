@@ -1,9 +1,12 @@
 
 $main-font: 'Roboto', sans-serif;
+$handwritten:'Amatic SC', cursive;
 $main-accent: #74B4AE;
 $secondary-accent: #FFDFA4;
 /*$secondary-accent: #74B4AE;*/
 $main-nav-color: #FFF9E3;
+$white: white;
+$black: #555;
 
 
 body {
@@ -14,7 +17,6 @@ body {
 	  -webkit-font-smoothing: antialiased;
 	 width: 100%;
 	 overflow-x: hidden;
-
 	 
 }
 
@@ -33,6 +35,19 @@ p {
   margin-bottom: 1em;
 }
 
+
+.p-94 {
+  font-size: 1.71em;
+  padding-bottom: 2em;
+  font-weight: 100;
+}
+
+.wide {
+  max-width: 75%;
+  margin: 0 auto;
+
+}
+
 a {
   color: #00AAEE;
   text-decoration: none;
@@ -41,4 +56,20 @@ a {
 
 li {
 	list-style: none;
+}
+
+.f-icon {
+  font-family: hflr;
+
+}
+
+ .black {
+  color: $black;
+}
+.white {
+  color: $white;
+}
+
+.main-accent {
+  color: $main-accent;
 }

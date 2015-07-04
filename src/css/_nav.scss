@@ -20,14 +20,21 @@
 	a {
 		color: #222222;
 		font-weight: 300;
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	
 	.nav-logo {
 		width: 250px;
+		font-weight: 700;
 		margin-top: 20px;
 		text-align: center;
 		font-size: 6.4em;
+		font-family: 'Lora', serif;
+		color: $black;
+	}
+
+	.active {
+  		color: $main-accent;
 	}
 }
 

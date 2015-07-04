@@ -1,0 +1,97 @@
+
+.process {
+	background-color: $main-accent;
+}
+
+.philosophy {
+	margin-top: -100px;
+}
+
+.process, .philosophy, .team {
+	padding-bottom: 4em;
+
+}
+
+.team {
+	background-color: #13344E;
+
+}
+.about-header-icon {
+	font-family: hflr;
+	font-size: 8em;
+	text-align: center;
+	padding-bottom: .75em;
+}
+
+.about-header {
+	text-align: center;
+	padding: 1.8em 0 1.2em;
+	font-size: 4em;
+	font-weight: 700;
+	font-family: $handwritten;
+	margin: 0;
+
+}
+
+
+.process-info {
+    max-width: 1250px;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	margin: 0 auto;
+	justify-content: space-around;
+
+	li {
+		width: 20em;
+		padding-bottom: 6em;
+	
+
+	}
+
+	.f-icon {
+		text-align: center;
+		font-size: 2.8em;
+		padding-bottom: .6em;
+	}
+
+	h3 {
+	font-size: 1.8em;
+	text-align: center;
+	margin: 0;
+	padding-bottom: .5em;
+	}
+
+	p {
+	width: 14em;
+	font-size: 1.2em;
+	font-weight: 300;
+	margin: 0 auto;
+	color: white;
+	}
+}
+
+
+.team-members {
+	max-width: 1250;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	li {
+	background: $white;
+	 width: 350px;
+	 padding: 2em;
+	}
+	img {}
+	h3 {margin: 0;}
+	h4 {}
+	p {}
+}
+
+.team-social {
+
+	a{
+
+	}
+}
