@@ -1,0 +1,2 @@
+var app={};app.hamburger=function(){$(".menu-btn").click(function(){$(".responsive-menu").toggle("slide",{direction:"down"},300)})},app.scrollNav=function(){$(".down-arrow").on("click",function(){$("html, body").animate({scrollTop:$(".rotate-div-container").offset().top},2e3)})},app.divExpand=function(){$(".brim-collage").animate({marginTop:"1200px"},3e4),$(".mati-collage").hide(),setTimeout(function(){$(".mati-collage").show(),$(".mati-collage").animate({right:"200%"},12e4)},2e4)},app.divExpand(),app.hamburger(),app.scrollNav();
+//# sourceMappingURL=app.js.map
