@@ -1,0 +1,199 @@
+
+.process {
+	background-color: $main-nav-color;
+}
+
+.philosophy {
+	background-color: $main-accent;
+}
+
+.philosophy {
+	/*margin-top: -100px;*/
+}
+
+.process, .philosophy, .team {
+	padding-bottom: 4em;
+
+}
+
+.team {
+	background-color: #13344E;
+
+}
+.about-header-icon {
+	font-family: hflr;
+	font-size: 6.7em;
+	text-align: center;
+	padding-bottom: .75em;
+	margin-top: 40px;
+	padding-top: 1em;
+}
+
+.about-header {
+	text-align: center;
+	padding: 0em 0 1.2em;
+	font-size: 2.7em;
+	font-weight: 300;
+	font-family: $main-font;
+	margin: 0;
+	text-transform: uppercase;
+
+}
+
+
+.process-info {
+    max-width: 1250px;
+	color: $black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	margin: 2em auto 0;
+	justify-content: center;
+
+	li {
+		width: 20em;
+		padding-bottom: 6em;
+	
+
+	}
+
+	.f-icon {
+		text-align: center;
+		font-size: 2.8em;
+		padding-bottom: .6em;
+	}
+
+	h3 {
+	font-size: 1.8em;
+	text-align: center;
+	margin: 0;
+	padding-bottom: .5em;
+	}
+
+	p {
+	width: 14em;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0 auto;
+	color: $black;
+	}
+}
+
+
+.team-members {
+	max-width: 1250px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-bottom: 6em;
+
+	li {
+		margin: 0 auto;
+	/*background: $white;*/
+	}
+	img {
+		width: 260px;
+		height: auto;
+	}
+	h3 {
+		margin: 0;
+		padding: .3em;
+		background-color: rgba(0,0,0,.5);
+	}
+	h4 {
+		padding-bottom: .25em;
+		font-weight: 300;
+	}
+	p { 
+		font-size: .8em;
+	}
+}
+
+.team-social {
+	/*position: absolute;
+	bottom: 0;
+	left: 10px;*/
+
+	a{
+		display: inline;
+		font-size:2.6em;
+
+
+	}
+}
+.name-role-div {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	color: $white;
+}
+
+.flip-container {
+	perspective: 1000;
+	margin-bottom: 4em;
+	margin-right: 4em;
+	padding-bottom: 2em;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 260px;
+	height: 310px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*border-radius: 1em;*/
+	/*overflow: hidden;*/
+}
+
+.back, .team-members img {
+	border-radius: .3em;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	background-color: $white;
+	box-sizing: border-box;
+	overflow: scroll;
+	padding: 1em;
+}
+
+.about-shiv {
+	height: 100px;
+	position: absolute;
+	left: 0;
+	width: 1000px;
+	background-color: #13344E;
+	padding-top: 2em
+}
+
+
+
+

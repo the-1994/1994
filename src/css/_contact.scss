@@ -1,0 +1,49 @@
+
+	.contact-list-ul {
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+
+		li {
+		padding: 20px 13px 4em;
+		font-family: hflr;
+		display: inline-block;
+		font-size: 3em;
+
+		}
+
+		li a {
+			font-family: hflr;
+			color: $main-accent;
+			margin-bottom: 90px;
+
+		}
+		
+		li a:hover {
+			color: #444444;
+		}
+	}
+
+	.contact-content {
+		padding-top: 6em;
+		p {
+			padding: 2em;
+			font-size: 1.5em;
+			text-align: center;
+		}
+	}
+
+
+@media screen and (max-width: 450px) {
+  .contact-list-ul {
+  	margin: 0 auto;
+  	width: 100%;
+  	text-align: center;
+  	padding-bottom: 3em;
+  	li {
+  		padding-bottom: 1em;
+  	}
+  }
+}
