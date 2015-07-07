@@ -154,7 +154,11 @@
 }
 
 .work-shiv {
-	height: 70px;
+	height: 100px;
+}
+
+.work-angle{
+  background-color: $main-accent;
 }
 
 @media screen and (max-width: 500px) {

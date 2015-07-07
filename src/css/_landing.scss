@@ -9,7 +9,7 @@
 
 .hero-content {
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 1000px;
@@ -124,10 +124,13 @@ position: relative;
 
 @media screen and (max-width: 772px) {
 	.hidden-content {
-		left: 50%;
+		left: 55%;
 		top: 25%;
 	}
 	
+	.hero-content {
+		top: 20%;
+	}
 	.hero-content {
 		p {
 			/*padding-top: 14%;*/
@@ -140,5 +143,7 @@ position: relative;
 }
 
 @media screen and (max-width: 500px) {
-
+	.down-arrow {
+		bottom: 30%;
+	}
 }

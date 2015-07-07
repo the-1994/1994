@@ -28,22 +28,28 @@
 
 	.contact-content {
 		padding-top: 6em;
+		min-height: 50vh;
 		p {
 			padding: 2em;
 			font-size: 1.5em;
 			text-align: center;
+			font-weight: 300;
 		}
 	}
 
 
 @media screen and (max-width: 450px) {
   .contact-list-ul {
+  	width: 90%;
   	margin: 0 auto;
-  	width: 100%;
   	text-align: center;
   	padding-bottom: 3em;
   	li {
   		padding-bottom: 1em;
   	}
+  }
+  .contact-content {
+  	padding-top: 3em;
+
   }
 }
