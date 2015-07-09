@@ -5,6 +5,7 @@
  background-color: #FFF9E3;
  position: relative;
  margin-top: 50px;
+ z-index: -1;
 }
 
 .hero-content {
@@ -124,7 +125,7 @@ position: relative;
 
 @media screen and (max-width: 772px) {
 	.hidden-content {
-		left: 55%;
+		left: 50%;
 		top: 25%;
 	}
 	

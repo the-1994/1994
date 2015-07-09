@@ -16,14 +16,13 @@
 	flex-wrap: wrap;
 	padding: 30px 90px 70px;
 	align-items: center;
-	background-color: $main-nav-color;
 	position: relative;
 	z-index: 0;
 
 	
 	a {
-		color: #222222;
-		font-weight: 300;
+		color: $black;
+		font-weight: 400;
 		font-size: 1.4em;
 	}
 	
@@ -61,10 +60,10 @@
   width: 115%;
   color: white;
   text-align: center;
-  min-height: 4em;
+  min-height: 6em;
   padding: 5em 0;
   margin-left: -15px;
-  margin-bottom: -115px;
+  margin-bottom: -100px;
   position: relative;
   z-index: 100;
 	
@@ -148,6 +147,7 @@ footer {
 }
 
 .responsive-menu {
+
 	/*display:none;*/
 
 }
@@ -182,48 +182,168 @@ footer {
 }
 
 
-@media screen and (max-width: 772px) {
-.menu-btn {
-	margin-top:-4px;
-	height: 40px;
-	padding: 20px 7px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index:200000000000;
-}
-.menu-btn div {
-	position: absolute;
-	left: 90%;
-	top: 10px;
-	padding-right: 8px;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
- 
-.menu-btn span {
-	display: block;
-	width: 26px;
-	height: 6px;
-	margin: 4px 4px;
-	background: $main-accent;
-	z-index: 99;
 
+
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
 }
- 
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 772px) {
+	
+#nav-icon1 {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+	top: 30px;
+	left: 20px;
+  margin: 0 auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+	z-index: 100000;
+}
+
+#nav-icon1 span{
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 34px;
+  background: $main-accent;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 24px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 12px !important;
+  transform: rotate(135deg) !important;
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  transform: rotate(-135deg);
+}
+
+	
 .responsive-menu{
-	display: none;
+	visibility: hidden;
 	background-color: $main-nav-color;
 	/*left: 50%;*/
 	/*transform: translate(-50%);*/
 }
  
-.expand {
-	display: block !important; 
-}
+//.expand {
+//	display: block !important; 
+//}
 
 .logo-mobile {
 	display: block;
@@ -267,10 +387,16 @@ footer {
 	.navbar {
 		flex-direction: column;
 		max-width: 100%;
-		padding: 5px 20px 20px;
+		padding: 5px 20px 10px;
 		z-index: 100000000;
+		background-color: rgba(0,0,0,.7);
 
-
+		a {
+			position: relative;
+			color: $main-nav-color;
+			cursor: pointer;
+			z-index: 1000000000;
+		}
 
 	}
 	
