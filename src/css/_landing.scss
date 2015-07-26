@@ -5,7 +5,7 @@
  background-color: #FFF9E3;
  position: relative;
  margin-top: 50px;
- z-index: -1;
+z-index: -10;
 }
 
 .hero-content {
@@ -38,6 +38,7 @@
 	font-family: hflr;
 	font-size: 3em;
 	cursor: pointer;
+	z-index: 10000;
 
 }
 
@@ -59,7 +60,7 @@ position: relative;
 
 .rotate-div {
 		transform: rotate(-07deg);
-	  width: 115%;
+	  width: 117%;
 	  background-color: black;
 	  height: 300px;
 	  margin-left: -30px;
@@ -121,6 +122,7 @@ position: relative;
 	top: 37%;
 	transform: translate(-50%) rotate(07deg);
 	line-height: 1.2;
+	text-align: center;
 }
 
 @media screen and (max-width: 772px) {

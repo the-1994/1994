@@ -14,6 +14,7 @@ app.hamburger = function(){
 		}	else {
 			$('.responsive-menu').removeClass('fadeOutUp');
 			$('.responsive-menu').addClass('slideDown');
+//			$('.hero-section').toggleClass('expand400');
 				}
 //    	 // $('.flags').toggle("slide", { direction: "left" }, 300);
 //    	$('.hero-section').toggleClass('expand400');
