@@ -60,7 +60,7 @@ position: relative;
 
 .rotate-div {
 		transform: rotate(-07deg);
-	  width: 117%;
+	  width: 117%; 
 	  background-color: black;
 	  height: 300px;
 	  margin-left: -30px;
@@ -123,6 +123,9 @@ position: relative;
 	transform: translate(-50%) rotate(07deg);
 	line-height: 1.2;
 	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 300;
 }
 
 @media screen and (max-width: 772px) {
