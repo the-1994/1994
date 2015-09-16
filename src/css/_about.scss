@@ -6,16 +6,18 @@
 .philosophy {
 	background-color: $main-accent;
 	p {font-weight: 300;}
+	
 }
 
 
-.process, .philosophy, .team {
+.philosophy, .team {
 	padding-bottom: 4em;
 
 }
 
 .team {
 	background-color: #13344E;
+	padding-top: .7em;
 
 }
 .about-header-icon {
