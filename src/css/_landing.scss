@@ -28,6 +28,7 @@ z-index: -10;
 
 .hero-94 {
 	font-size:17em;
+	margin: 0;
 }
 
 .down-arrow {
@@ -131,7 +132,6 @@ position: relative;
 }
 
 
-
 /*CLIENT SECTION*/
 
 //.rotate-main {
@@ -201,7 +201,8 @@ height: 40px;
 	padding: 5em 0 7em;
 	text-align: center;
 	h3 {
-		font-size: 1.7em
+		font-size: 1.7em;
+		font-family: 'canterburyregular';
 	}
 	
 	p {
@@ -228,6 +229,7 @@ height: 40px;
 		padding: 0em 2em;
 		border: none;
 		font-size: 1em;
+		box-shadow: none;
 	}
 	
 	button:hover {
