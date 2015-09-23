@@ -18,6 +18,9 @@
 }
 
 .newsletter {
+	font-family: 'Lora';
+	
+	
 	h1 {
 	font-family: 'canterburyregular', cursive;
 	font-size: 13em;
@@ -26,11 +29,14 @@
 
 h2 {
 	font-family: 'canterburyregular', cursive;
+	margin-bottom: .5em;
 }
 
 p {
 	font-family: "Times New Roman";
 	font-size: 1.2em;
+	text-indent: 1.3em;
+	margin-bottom: .5em;
 }
 
 
@@ -39,14 +45,24 @@ p {
 	text-align: center;
 	font-size: 15vw;
 	font-family: 'canterburyregular', cursive;
-	margin: 20px 0;
+	margin: -1% 0 0;
 }
+
 
 .nl-header-2 {
 	display: flex;
 	justify-content: space-between;
-  
 }
+	
+	.top-line {
+		margin-top: -10px;
+	
+	}
+	
+	
+	.newspaper-subheader {
+		margin-bottom: 0;
+	}
 
 .header-small {
 	font-size: .75em;
@@ -68,6 +84,95 @@ p {
 	-webkit-flex-wrap: wrap-reverse;
 	/*padding: 0 30px;*/
 }
+	
+	.nl-hl-2 {
+		font-family:'Lora', serif;
+		font-size: 2.3em;
+		text-align: justify;
+		letter-spacing: 2px;
+	
+	}
+	
+	
+	.nl-hl-3, .nl-hl-4 {
+		font-family: 'Lora', serif;
+		font-size: 1.8em;
+		text-transform: uppercase;
+		text-align: left;
+		letter-spacing: .03em;
+	}
+	
+	.nl-hl-4 {
+		margin-bottom: 0;
+		font-size: 2.2em;
+		letter-spacing: .05em;
+	}
+	
+	
+/*LIST STUFF*/
+	
+	.nl-list-container {
+		h3{
+			font-size: 2.2em;
+			font-family: 'Lora';
+			margin: .5em 0;
+		}
+		
+
+			
+			.nl-list li {
+			display: flex;
+				flex-direction: row;
+			justify-content: space-between;
+			
+			}
+			
+		
+			.nl-list li a{
+				color: black;
+				font-size: 1em;
+				font-family: 'Georgia';
+				display: inline-block;
+				margin-bottom: .1em;
+				font-weight: 400;
+			}
+	}
+	
+	/* SONG OF THE WEEK/AUDIO */
+	
+	#play, #stop {
+		display: inline-block;
+		font-family: HFLR, wingdings;
+		color: #555;
+		font-size: 1.4em;
+		padding: .3em 1.4em;
+		cursor: pointer;
+		margin-left: 2.5em;
+//		border: 1px solid black;
+//		border-radius: 100%;
+		
+	}
+	
+	.audio-controls {
+	}
+	
+	.song, .artist{
+		display: inline-block;
+		text-align: center;
+//		width: 30%;
+		font-size: 1.2em;
+		margin: .7em 0;	
+		font-weight: 700;
+	}
+	
+	
+	.audio-container {
+		p {
+			text-indent: 0;
+		}
+	
+	}
+	
 
 
 .column-one {
@@ -99,7 +204,7 @@ p {
 
 .column-two h1 {
 	font-size: 4em;
-	margin: 0;
+	margin:-10px 0 0;
 	font-family: 'Lora', serif;
 	font-style: italic;
 	letter-spacing: -2.5px;
@@ -116,8 +221,16 @@ p {
 }
 
 .newspaper-pic {
-	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
+	
+	.newspaper-caption {
+	font-weight: 700;
+		font-size: .8em;
+		font-style:italic;
+		margin-bottom: .5em;
+	}
 
 
 form {
@@ -157,6 +270,7 @@ label {
 
 button {
 	/*height: 15px;*/
+	margin-top: 1em;
 	width: 200px;
 	border: none;
 	background-color: rgba(241, 143, 148, 1);
@@ -164,14 +278,25 @@ button {
 	box-shadow: 3px 5px 10px rgb(178, 174, 174);
 	padding: 10px;
 	font-size: 1em;
+	transition: all .5s;
 	/*margin: 1em 0em 0em;*/
+	outline: none;
+	color: white;
 
 }
 
 button:hover {
 	box-shadow: 3px 5px 10px black;
-	transition: all 1s;
+	background-color: rgba(255, 0, 0, 1);
+	color: white;
 }
+	
+	button:active {
+	background-color: red;
+		box-shadow: none;
+		padding: 10px 8px;
+		margin-top: 1.1em;
+	}
 
 
 .newsletter-footer {
@@ -183,7 +308,8 @@ button:hover {
 	padding: .25em;
 	margin:0 auto 1em;
 	color: #555;
-	background-color: rgb(244, 242, 242);
+//	background-color: rgb(244, 242, 242);
+	background-color: #444;
 	max-width: 85%;
 	min-height: auto;
 	height: auto;
@@ -192,13 +318,13 @@ button:hover {
 
 	p {
 		display:inline-block;
-		color: #555;
+		color: white;
 		 margin: 0;
 	   padding: 0;
 	   font-size: 1.2rem;
 	}
 
-	a {color: #555;
+	a {color: white;
 	   margin: 0;
 	   padding: 0;
 	   font-family: 'Times';
@@ -211,6 +337,24 @@ button:hover {
 
 }
 
+.newsletter {
+
+.newsletter-social-icons {
+	.social-icon-letters {
+		font-family: hflr;
+		text-transform: lowercase;
+	}
+} 
+}
+
+.signup-column2 {
+	margin-bottom: 1.5em;
+	
+	form {
+		border: 1px solid;
+	}
+}
+
 
 @media screen and (max-width: 960px) {
 	.newsletter .column-two h1 {
@@ -219,15 +363,7 @@ button:hover {
 
 }
 
-/*@media screen and (max-width: 1200px) {
-	.newsletter .flex-container {
-		flex-direction: column;
-	}
 
-	body {
-		background-color: blue;
-	}
-}*/
 
 
 

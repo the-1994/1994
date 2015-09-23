@@ -28,7 +28,7 @@ z-index: -10;
 
 .hero-94 {
 	font-size:17em;
-	margin: 0;
+	margin: .5em;
 }
 
 .down-arrow {
@@ -204,10 +204,11 @@ height: 40px;
 		font-size: 4em;
 		font-family: 'canterburyregular';
 		margin-bottom: .5em;
+		color: #555;
 	}
 	
 	p {
-		margin-bottom: .5em;
+		margin-bottom: 1.5em;
 		font-family: 'Lora';
 	}
 	
@@ -223,11 +224,12 @@ height: 40px;
 	}
 	
 	.weekly-submit {
+		box-sizing: border-box;
 		display: inline-block;
-		background-color: orangered;
+		background-color: #444;
 		color: #FFF9E3;
 		border-radius: .2em;
-		border: 1px solid white;
+		border: 1px solid #444;
 		padding: 1em 3em;
 		border: none;
 		font-size: 1.2em;
@@ -235,10 +237,12 @@ height: 40px;
 		font-family: 'Lora';
 		letter-spacing: 2px;
 		font-weight: 700;
+		
 	}
 	
 	.weekly-submit:hover {
 		background-color: #74B4AE;
+		color: #FFF9E3;
 	}
 }
 
