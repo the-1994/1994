@@ -37,6 +37,7 @@ p {
 	font-size: 1.2em;
 	text-indent: 1.3em;
 	margin-bottom: .5em;
+	text-align: justify;
 }
 
 a {
@@ -51,6 +52,8 @@ a {
 	font-size: 12vw;
 	font-family: 'canterburyregular', cursive;
 	margin: 0 0 .1em;
+	max-width: 97%;
+	padding: 0 2px;
 }
 
 
@@ -115,6 +118,7 @@ a {
 	.nl-hl-4 {
 		margin-bottom: 0;
 		font-size: 1.9em;
+			line-height: .9;
 		letter-spacing: .05em;
 	}
 	
@@ -126,6 +130,7 @@ a {
 			font-size: 2em;
 			font-family: 'Lora';
 			margin: .5em 0;
+			line-height: .9;
 		}
 		
 
@@ -177,7 +182,7 @@ a {
 	
 	.audio-container {
 		p {
-			text-indent: 0;
+			text-indent: 1em;
 		}
 	
 	}
@@ -241,10 +246,11 @@ a {
 }
 	
 	.newspaper-caption {
-	font-weight: 700;
+	  font-weight: 700;
 		font-size: .8em;
 		font-style:italic;
 		margin-bottom: .5em;
+		line-height: 1;
 	}
 
 
@@ -290,7 +296,7 @@ button {
 	border: none;
 	background-color: rgba(241, 143, 148, 1);
 	text-transform: uppercase;
-	box-shadow: 3px 5px 10px rgb(178, 174, 174);
+//	box-shadow: 3px 5px 10px rgb(178, 174, 174);
 	padding: 10px;
 	font-size: 1em;
 	transition: all .5s;
@@ -301,7 +307,7 @@ button {
 }
 
 button:hover {
-	box-shadow: 3px 5px 10px rgb(178, 174, 174);
+//	box-shadow: 3px 5px 10px rgb(178, 174, 174);
 	/*background-color: rgba(255, 0, 0, 1);*/
 	color: white;
 }
@@ -326,8 +332,9 @@ button:hover {
 //	background-color: rgb(244, 242, 242);
 	background-color: #444;
 	max-width: 85%;
-	min-height: auto;
-	height: auto;
+	height: 25px;
+	min-height: 25px !important;
+
 
 
 
@@ -378,9 +385,152 @@ button:hover {
 
 }
 
+@media screen and (max-width: 923px) {
+	.newsletter .flex-container{
+		flex-direction: column;
+		padding: 0;
+		flex-wrap: wrap;
+	}
+	
+	.newsletter .column-one {
+		min-width: auto;
+		order: 2;
+	
+		
+	}
+	
+	.newsletter .column-two {
+		min-width: auto;
+		order: 1;
+
+	}
+
+}
 
 
+@media screen and (max-width: 650px) {
 
+	.newsletter {
+   max-width: 98% !important;
+	 min-width: auto !important;
+		width: auto !important;
+		
+		 .column-two h1 {
+			font-size: 9vw;
+			margin-top: .2em;
+		}
+		 
+
+
+		.column-two h2 {
+			font-size: 6vw;
+		}
+
+		.nl-header-2 li {
+			font-size: .8em;
+		}
+		
+		.top-line, hr {
+			margin: 0;
+		}
+		
+		input {
+			width: 200px;
+		}
+
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.newsletter {
+
+		.flex-container {
+			text-align: left;
+		}
+		.newsletter-footer {
+			height:25px;
+			width: 100%;
+		}
+		
+		
+		.signup-column2 form {
+    border: 1px solid;
+    max-width: 20rem;
+    margin: 0 auto;
+    }
+		
+		.column-one, .column-two {
+			padding: 0 7px;
+		}
+		
+		.nl-header {
+			font-size: 2.3em;
+		}
+		
+		.nl-header-2 {
+			max-width: 95%;
+			margin: 0 auto .1em;
+		}
+		
+		.nl-list {
+			  max-width: 95%;
+    		margin: 0 auto;
+		}
+		
+		.newsletter .column-two h1 {
+		max-width: 95%;
+		}
+		
+
+	}
+
+
+}
+
+@media screen and (max-width: 335px) {
+	
+
+	
+	.newsletter {
+		
+		 width: 100% !important;
+		 padding: 0; 
+		 margin: 0;
+		 overflow-x: hidden;
+		
+		.newspaper-pic, .newspaper-caption, p {
+				max-width: 300px;
+			}
+		
+	  .nl-list-container {
+			max-width: 315px;
+		
+    }
+		
+		.nl-hl-2 {
+			font-size: 1.7em;
+		}
+		
+		.nl-hl-3 {
+			font-size: 1.36em;
+		}
+		
+		.nl-hl-4 {
+			font-size: 1.7em;
+		}
+		
+		.nl-list-container h3 {
+		  font-size: 1.75em;
+		}
+		
+		.signup-column2  {
+			max-width: 300px !important;
+			margin: 0;
+		}
+	}
+	
+	
+}
 
 
 
