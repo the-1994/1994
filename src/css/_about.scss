@@ -72,11 +72,12 @@
 	}
 
 	p {
-	width: 14em;
+	width: 16em;
 	font-size: 1em;
 	font-weight: 300;
 	margin: 0 auto;
 	color: $black;
+	text-align: justify;
 	}
 }
 
@@ -192,7 +193,7 @@
 	position: absolute;
 	left: 0;
 	width: 100%;
-	background-color: #13344E;
+	background-color: $main-nav-color;
 	padding-top: 2em
 }
 
