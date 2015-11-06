@@ -156,41 +156,76 @@ position: relative;
 //	min-height: 00px;
   background-color: lightsalmon;
 	margin-top: -100px;
-
-
+//	min-height: 500px;
+	text-align: center;
 }
-.clients-ul {
-	position: relative;
-	bottom: 26%;
-	width: 90%;
+
+
+
+//.clients-ul {
+//	position: relative;
+//	bottom: 26%;
+//	width: 90%;
+//	margin: 0 auto;
+//	display: flex;
+//	flex-direction: row;
+//	justify-content: space-around;
+////	transform: rotate(07deg);
+//	flex-wrap: wrap;
+//	li {
+//		margin: 1em 3em;
+//	}
+//}
+
+.clients-grid {
+//	max-width: 95%;
+//	margin: 0 auto;
+	display: block;
+	background-color: lightsalmon;
+//	transform: translateX(10%);
+	max-width: 800px;
 	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-//	transform: rotate(07deg);
-	flex-wrap: wrap;
-	li {
-		margin: 1em 3em;
-	}
 }
+
+.grid-item {
+	position: relative;
+  width: 150px;
+  height:150px;
+	padding: 1em 1em;
+	margin: 0 .5em;
+	
+	
+	img {
+	 width: 125px;
+	 height: auto;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	}
+	
+  	.runaway-logo {
+
+		width: 220px;
+
+		}
+		}
+ 
 .client-logo {
 	height: 50px;
 	width: auto;
 }
+//
+//.williams-logo {
+//	height: 30px;
+//	margin-top: 15px;
+//}
+//
 
-.williams-logo {
-	height: 30px;
-	margin-top: 15px;
-}
-
-.runaway-logo {
-margin-left: 40px;
-height: 60px;
-}
-
-.brightleaf-logo {
-height: 40px;
-}
+//
+//.brightleaf-logo {
+//height: 40px;
+//}
 
 
 /*NEWSLETTER SIGN UP*/
@@ -246,14 +281,6 @@ height: 40px;
 		color: #FFF9E3;
 	}
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -340,6 +367,30 @@ height: 40px;
 		display: block;
 	}
 	
+//	.clients-grid {
+//		transform: translateX(6%);
+//}
+	
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.grid-item {
+	  height: 150px;
+		width: 150px;
+		
+		img {
+			width: 125px;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 914px) {
+	.clients-grid {
+		transform: translateX(12%);
+		}
+	
 }
 
 @media screen and (max-width: 772px) {
@@ -360,6 +411,11 @@ height: 40px;
 		font-size: 12em;
 	}
 	
+	.clients-grid {
+
+	transform: translateX(8%);
+}
+	
 
 }
 
@@ -369,13 +425,20 @@ height: 40px;
 		input {
 			display: block;
 			margin: 0 auto 1.5em;
-			
 		}
 	}
+		.clients-grid {
+			transform: translateX(6%);
+	}
+	
 }
 
 @media screen and (max-width: 500px) {
 	.down-arrow {
 		bottom: 40%;
+	}
+	
+	 .clients-grid {
+		transform: translateX(20%);
 	}
 }
